@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Nutrição</title>
+    <style>
+        body {
+            background-image: url("foto.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+        }
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+        }
+        .menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 998;
+        }
+        .menu.active {
+            display: block;
+        }
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-top: 40px;
+            text-align: justify;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            menuIcon.addEventListener('click', toggleMenu);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Site de Nutrição</h1>
+        <div class="menu-icon">&#9776;</div>
+        <div class="content">
+            <h2>Bem-vindo ao site de nutrição!</h2>
+            <h3>aqui você vai encontrar dicas <br>
+            <h3>conhecimento <br>
+            <h3>receitas <br>
+            <h3>Dicas e muito mais!<br>
+            <h3>clique no menu para navegar <br>
+            <h3>seja bem vindo</h3>
+        </div>
+        <div id="menu" class="menu">
+            <a href="livros.html">Livros</a>
+            <a href="receitas.html">Receitas</a>
+            <a href="informacoes.html">Informações</a>
+        </div>
+    </div>
+</body>
+</html>

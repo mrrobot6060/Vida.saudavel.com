@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Saudável</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .painel {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .painel h2 {
+            margin-top: 0;
+        }
+        .painel p {
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vida Saudável</h1>
+
+    <div class="painel">
+        <h2>Como ter uma vida saudável</h2>
+        <p>Este painel fornece dicas e orientações sobre como adotar um estilo de vida saudável. Aborda temas como alimentação balanceada, exercícios físicos, qualidade do sono, gerenciamento do estresse, entre outros.</p>
+        <button class="btn">Ver mais</button>
+        <div class="hidden">
+            <p>Aqui estão algumas dicas para ter uma vida saudável:</p>
+            <ul>
+                <li>Alimente-se com uma dieta equilibrada e rica em nutrientes</li>
+                <li>Pratique exercícios físicos regularmente</li>
+                <li>Durma o suficiente e mantenha uma boa qualidade de sono</li>
+                <li>Gerencie o estresse por meio de técnicas de relaxamento</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="painel">
+        <h2>Como superar os obstáculos</h2>
+        <p>Neste painel, você encontrará estratégias para superar os desafios comuns encontrados ao adotar um estilo de vida saudável. Explore dicas para lidar com a falta de tempo, resistência às mudanças de hábitos, pressões sociais, entre outros obstáculos.</p>
+        <button class="btn">Ver mais</button>
+        <div class="hidden">
+            <p>Aqui estão algumas estratégias para superar os obstáculos:</p>
+            <ul>
+                <li>Crie um plano de ação para lidar com a falta de tempo</li>
+                <li>Encontre apoio social e incentive amigos e familiares a adotarem hábitos saudáveis</li>
+                <li>Aprenda a lidar com a pressão social e as tentações</li>
+                <li>Estabeleça metas realistas e celebre as pequenas conquistas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="painel">
+    <h2>Como começar e continuar</h2>
+    <p>Neste painel, você encontrará orientações para dar os primeiros passos em direção a um estilo de vida saudável e como manter-se motivado ao longo do tempo. Aprenda sobre estabelecer metas realistas, criar uma rotina saudável e superar a falta de motivação.</p>
+    <button class="btn">Ver mais</button>
+    <div class="hidden">
+        <p>Aqui estão algumas dicas para começar e continuar:</p>
+        <ul>
+            <li>Defina metas claras e alcançáveis</li>
+            <li>Crie uma rotina diária que inclua atividades saudáveis</li>
+            <li>Encontre formas de se manter motivado, como recompensas e acompanhamento de progresso</li>
+            <li>Envolva-se em atividades prazerosas que promovam bem-estar físico e mental</li>
+        </ul>
+    </div>
+</div>
+
+<div class="painel">
+    <h2>Frases de autoajuda</h2>
+    <p>Neste painel, você encontrará uma seleção de frases inspiradoras e motivacionais para impulsionar sua jornada em direção a uma vida saudável. Essas frases podem ajudar a manter uma mentalidade positiva e resiliente ao enfrentar desafios.</p>
+    <button class="btn">Ver mais</button>
+    <div class="hidden">
+        <p>Aqui estão algumas frases de autoajuda:</p>
+        <ul>
+            <li>"O que você come no privado, você veste em público."</li>
+            <li>"O corpo alcança o que a mente acredita."</li>
+            <li>"Faça do seu bem-estar uma prioridade."</li>
+            <li>"O importante não é quanto tempo você vive, mas como você vive."</li>
+        </ul>
+    </div>
+</div>
+
+<div class="painel">
+    <h2>Utilidade de ter uma vida saudável</h2>
+    <p>Neste painel, você encontrará informações sobre os benefícios e a utilidade de adotar um estilo de vida saudável. Descubra como uma vida saudável pode contribuir para a prevenção de doenças, o aumento da energia, a melhoria do sono e a promoção do bem-estar geral.</p>
+    <button class="btn">Ver mais</button>
+    <div class="hidden">
+        <p>Aqui estão alguns benefícios de ter uma vida saudável:</p>
+        <ul>
+            <li>Redução do risco de doenças crônicas, como diabetes e doenças cardíacas</li>
+            <li>Maior energia e disposição para realizar as atividades diárias</li>
+            <li>Melhoria na qualidade do sono e recuperação adequada do corpo</li>
+            <li>Aumento do bem-estar emocional e mental</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const btns = document.querySelectorAll('.btn');
+
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const hiddenContent = btn.nextElementSibling;
+            hiddenContent.classList.toggle('hidden');
+        });
+    });
+</script>
+
+</body>
+</html>
